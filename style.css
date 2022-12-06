@@ -1,0 +1,136 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    color: #2E2E2E;
+}
+
+ul {
+    list-style-type:none;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+section, footer, header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1590px;
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    width: 100%;
+}
+
+.container-bis {
+    max-width: 1364px;
+}
+
+h2 {
+    font: normal normal normal 60px/73px "Century Gothic";
+    color: #2E2E2E;
+}
+
+.right-part, .left-part {
+    flex: 1;
+}
+
+
+/* NAV */
+nav {
+    max-width: 1364px;
+    margin: auto;
+    border-bottom: 5px solid #2E2E2E;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 783px;
+    margin: auto;
+    padding: 60px 0;
+    font: normal normal bold 30px/37px "Century Gothic";
+    color: #2E2E2E;
+
+}
+
+
+/* HELLO SECTION */
+#section-hello{
+    padding-top: 200px;
+}
+
+#section-hello .right-part h2{
+    margin-bottom: 30px;
+}
+
+#section-hello .right-part p{
+    font: normal normal 300 25px/38px Roboto;
+    margin-bottom: 30px;
+}
+
+
+/* SKILL SECTION */
+#section-skills .container, footer .container {
+    flex-direction: column;
+}
+
+#section-skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1364px;
+    margin-top: 150px;
+}
+
+#section-skills .skills-list .skill {
+    width: 50%;
+    margin-bottom: 112px;
+}
+
+#section-skills .skills-list .skill .skill-txt .skill-title {
+    font: normal normal normal 40px/49px Century Gothic;
+}
+
+#section-skills .skills-list .skill .skill-txt .skill-subtitle {
+    font: normal normal 300 25px/38px Roboto;
+}
+
+/* CONTACTS SECTION */
+#section-contacts .left-part {
+    background-color: #2E2E2E;
+}
+
+#section-contacts .left-part h2 {
+    font: normal normal normal 60px/73px Century Gothic;
+    color: #fff;
+} 
+
+#section-contacts .left-part p {
+    font: normal normal 200 25px/38px Okta Neue;
+    color: #fff;
+} 
+
+
+/* FOOTER */
+footer .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+footer .socials p {
+    text-align: center;
+}
+
+footer .socials .socials-list {
+    display: flex;
+}
+
+footer .copyright {
+    margin: auto;
+}
