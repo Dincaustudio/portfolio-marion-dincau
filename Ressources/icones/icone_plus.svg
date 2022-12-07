@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        isolation: isolate;
+        opacity: .7;
+      }
+
+      .cls-2 {
+        fill: #2e2e2e;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="35" cy="35" r="35"/>
+  <path id="Icon_awesome-plus" data-name="Icon awesome-plus" class="cls-2" d="M52.11,30.51h-12.83v-12.84c0-1.57-1.28-2.85-2.85-2.85h-2.85c-1.57,0-2.85,1.28-2.85,2.85v12.84h-12.83c-1.58,0-2.85,1.28-2.85,2.85v2.85c0,1.58,1.28,2.85,2.85,2.85h12.83v12.83c0,1.58,1.28,2.85,2.85,2.85h2.85c1.58,0,2.85-1.28,2.85-2.85h0v-12.83h12.83c1.58,0,2.85-1.28,2.85-2.85h0v-2.85c0-1.58-1.28-2.85-2.85-2.85h0Z"/>
+</svg>
