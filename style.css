@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url('./Ressources/fonts/CenturyGothic/CenturyGothic-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Century Gothic Bold";
+    src: url('./Ressources/fonts/CenturyGothic/CenturyGothic-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto light";
+    src: url('./Ressources/fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: "Okta Neue Ultra Light";
+    src: url('./Ressources/fonts/OktaNeue/OktaNeue-UltraLight.ttf');
+}
+
+
 * { 
     margin: 0; 
     padding: 0; 
@@ -12,7 +33,7 @@ a:link {
     text-decoration: none;
   }
 
-section, footer, header {
+section, footer {
     display: flex;
     justify-content: center;
 }
@@ -41,10 +62,56 @@ h2 {
 
 
 /* HEADER */
-header img {
+header{
+    display: flex;
+    justify-content: right;
+    max-width: 1920px;    
+}
+
+header .page-title {
+    font: normal normal normal 33px/62px "Century Gothic";
+    color: #2E2E2E;
+    letter-spacing: 2px;
+}
+
+header .page-title p{
+    font: normal normal 200 50px/45px "Okta Neue Ultra Light";
+    letter-spacing: 1px;
+}
+
+header .glider-container {
+    max-width: 1250px;
+}
+
+
+header .glider-container .glide__slides{
+    display: block
+}
+
+header .glider-container .glide__slides .glide__slide {
+    transition: opacity 1s ease-in-out;
+    display: none;
+    /* opacity: 0; */
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    /* height: 0; */
+}
+
+header .glider-container .glide__slides .glide__slide.slide_active {
+    opacity: 1;
+    /* height: auto; */
+    display: block;
+}
+
+header .glider-container .glide__slides .glide__slide img{
+    width: 100%;
+}
+
+/* header img {
     height: 1250px;
     width: auto;
-}
+} */
 
 
 /* NAV */
@@ -66,6 +133,30 @@ nav ul {
 
 }
 
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #2E2E2E;
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #2E2E2E;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 /* HELLO SECTION */
 
@@ -74,7 +165,7 @@ nav ul {
 }
 
 #section-hello .right-part p{
-    font: normal normal 300 25px/38px Roboto;
+    font: normal normal 300 25px/38px "Roboto light";
     margin-bottom: 30px;
 }
 
@@ -100,15 +191,15 @@ nav ul {
 
 #section-skills .skills-list .skill img {
     width: 187px;
-    margin-right: 80px;
+    margin-right: 45px;
 }
 
 #section-skills .skills-list .skill .skill-txt .skill-title {
-    font: normal normal normal 40px/49px Century Gothic;
+    font: normal normal normal 40px/49px "Century Gothic";
 }
 
 #section-skills .skills-list .skill .skill-txt .skill-subtitle {
-    font: normal normal 300 25px/38px Roboto;
+    font: normal normal 300 25px/38px "Roboto light";
 }
 
 /* CONTACTS SECTION */
@@ -121,18 +212,18 @@ nav ul {
 }
 
 #section-contacts .left-part h2 {
-    font: normal normal normal 60px/73px Century Gothic;
+    font: normal normal normal 60px/73px "Century Gothic";
     color: #fff;
 } 
 
 #section-contacts .left-part p {
-    font: normal normal 200 25px/38px Okta Neue;
+    font: normal normal 200 25px/38px "Okta Neue Ultra Light";
     color: #fff;
 } 
 
 #section-contacts .right-part .contact-item {
     display: flex;
-    font: normal normal normal 30px/37px Century Gothic;
+    font: normal normal normal 30px/37px "Century Gothic";
 }
 
 #section-contacts .right-part .contact-item.tel{
@@ -178,7 +269,7 @@ footer .socials {
 footer .socials p {
     text-align: center;
     margin-bottom: 40px;
-    font: normal normal normal 20px/24px Century Gothic;
+    font: normal normal normal 20px/24px "Century Gothic";
 }
 
 footer .socials .socials-list {
@@ -196,5 +287,5 @@ footer .socials .socials-list img {
 
 footer .copyright {
     margin: auto;
-    font: normal normal normal 20px/24px Century Gothic;
+    font: normal normal normal 20px/24px "Century Gothic";
 }

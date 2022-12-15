@@ -2,22 +2,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
+    <div class="page-title">
+        <h1>Marion<br>D'Incau</h1>
+        <p>Portfolio</p>
+    </div>
+    
+    <div class="glider-container">
+        <div class="glide">
+                <ul class="glide__slides">
+                  <li class="glide__slide slide_active">
+                    <img src="./Ressources/images/entete3-min.png" alt="" srcset="">
+                  </li>
+                  <li class="glide__slide">
+                    <img src="./Ressources/images/entete3-min-bis.png" alt="" srcset="">
+                  </li>
+                </ul>
+            <div>
+        </div>
+    </div>
 </header>
 
 <nav>
     <div class="container">
         <ul>
             <li>
-                <a href="">Accueil</a>
+                <a href="" class="hover-underline-animation">Accueil</a>
             </li>
             <li>
-                <a href="">A mon propos</a>
+                <a href="" class="hover-underline-animation">A mon propos</a>
             </li>
             <li>
-                <a href="">Projets</a>
+                <a href="" class="hover-underline-animation">Projets</a>
             </li>
             <li>
-                <a href="">Contacts</a>
+                <a href="" class="hover-underline-animation">Contacts</a>
             </li>
         </ul>
     </div>
@@ -166,6 +184,7 @@
     
 </footer>
 
+<script src="./index.js"></script>
 <script>
     let year = new Date().getUTCFullYear();
     document.querySelector('span.year').innerHTML = year;
