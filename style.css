@@ -175,6 +175,10 @@ nav ul {
     flex-direction: column;
 }
 
+#section-skills .section--header {
+    width: 100%;
+}
+
 #section-skills .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -201,6 +205,128 @@ nav ul {
 #section-skills .skills-list .skill .skill-txt .skill-subtitle {
     font: normal normal 300 25px/38px "Roboto light";
 }
+
+/* GALLERY SECTION */
+#section-gallery .parent {
+    display: flex;
+    flex-direction: column;
+}
+
+#section-gallery .row-gallery {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#section-gallery .gallery-item {
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item:before{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.gallery-item .gallery-item-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.gallery-item .gallery-item-txt .item-title{
+    color: white;
+    font: normal normal normal 60px/73px Century Gothic;
+}
+
+.gallery-item .gallery-item-txt .item-subtitle{
+    color: white;
+    font: normal normal 300 25px/38px Roboto;
+}
+
+.gallery-item:hover img{
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.2);
+}
+
+.gallery-item:hover:before{
+    opacity: 0.6;
+}
+
+.gallery-item:hover .gallery-item-txt{
+    opacity: 1;
+}
+
+
+
+.gallery-item.div1 { 
+    max-width: 950px;
+    margin-right: 8px;
+}
+
+.gallery-item.div2 { 
+    max-width: 625px;
+    margin-left: 8px;
+}
+
+.gallery-item.div3 { 
+    max-width: 680px;
+    margin-right: 8px;
+}
+
+.gallery-item.div4 { 
+    max-width: 950px;
+    max-height: 720px;
+}
+
+#section-gallery .see-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E2E2E;
+    flex: 1;
+    margin-top: 16px;
+    padding-top: 60px;
+}
+
+#section-gallery .see-all p{
+    color: white;
+    font: normal normal normal 40px/49px Century Gothic;
+}
+
+#section-gallery .see-all img{
+    max-width: 70px;
+}
+
+#section-gallery .two-items-columns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
 
 /* CONTACTS SECTION */
 #section-contacts {
